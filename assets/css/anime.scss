@@ -1,0 +1,24 @@
+
+@keyframes ani1 {
+    to {
+        transform: translateY(0);
+    }
+}
+.msg-header-show h1 {
+    transform: translateY(-900px);
+    animation: ani1 1s ease-out forwards;
+}
+
+@keyframes ani2 {
+    to {
+        opacity: 1;
+    }
+}
+.msg-header-show p, .msg-header-show button {
+    opacity: 0;
+    animation: ani2 1s 1s ease-in forwards;
+}
+.msg-header-show button {
+    opacity: 0;
+    animation: ani2 1s 2s ease-in forwards;
+}

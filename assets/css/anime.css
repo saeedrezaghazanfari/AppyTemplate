@@ -1,0 +1,44 @@
+@-webkit-keyframes ani1 {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes ani1 {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.msg-header-show h1 {
+  -webkit-transform: translateY(-900px);
+          transform: translateY(-900px);
+  -webkit-animation: ani1 1s ease-out forwards;
+          animation: ani1 1s ease-out forwards;
+}
+
+@-webkit-keyframes ani2 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ani2 {
+  to {
+    opacity: 1;
+  }
+}
+
+.msg-header-show p, .msg-header-show button {
+  opacity: 0;
+  -webkit-animation: ani2 1s 1s ease-in forwards;
+          animation: ani2 1s 1s ease-in forwards;
+}
+
+.msg-header-show button {
+  opacity: 0;
+  -webkit-animation: ani2 1s 2s ease-in forwards;
+          animation: ani2 1s 2s ease-in forwards;
+}
